@@ -1,0 +1,164 @@
+REPORT 2 — Legal‑to‑HIPAA Data Mapping Lab (Mock Incident)
+Title: ePHI Exposure Risk in Legal Intake Workflow — Data Flow & HIPAA Safeguard Mapping
+Region: North America
+Industry: Legal + Healthcare Hybrid (Medical malpractice law firm)
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+A medical malpractice law firm discovered that its client intake process was unintentionally collecting Electronic Protected Health Information (ePHI) through unsecured channels, including:
+
+Unencrypted email attachments
+
+A web form lacking TLS enforcement
+
+Physical mail scanned on a workstation without access controls
+
+This report documents the end‑to‑end data flow, identifies HIPAA safeguard violations, and demonstrates your ability to map legal workflows to healthcare compliance requirements.
+
+2. Background
+The law firm handles sensitive medical records as part of litigation. Although not a covered entity, the firm acts as a Business Associate under HIPAA when handling ePHI.
+
+A paralegal raised concerns after noticing clients frequently submitted medical records through the general intake email address.
+
+Your role:
+
+Map the data flow
+
+Identify ingress points
+
+Apply HIPAA citations
+
+Recommend safeguards
+
+3. Scope
+This assessment covers:
+
+Intake → Processing → Storage → External Sharing
+
+Administrative, Physical, and Technical HIPAA safeguards
+
+Human behavior risks in legal workflows
+
+4. Data Flow Summary
+Ingress Points Identified
+Email Intake (intake@lawfirm.com)
+
+Clients attach medical records without encryption
+
+No automatic forwarding rules documented
+
+Web Intake Form
+
+TLS not enforced (HTTP fallback allowed)
+
+No consent banner explaining data handling
+
+Physical Mail → Scanning Station
+
+Shared workstation
+
+No unique user authentication
+
+Scans stored temporarily on local drive
+
+Phone Intake Notes
+
+Staff manually type medical details into CRM
+
+No audit trail
+
+5. HIPAA Safeguard Mapping
+Finding 1 — Unsecured Email Intake
+HIPAA Citation:
+
+§164.312(e)(1) — Transmission Security
+
+§164.308(a)(1) — Security Management Process
+
+Issue:  
+Clients routinely send medical records via unencrypted email.
+
+Risk:  
+Interception, unauthorized disclosure.
+
+Finding 2 — Web Form Without TLS Enforcement
+HIPAA Citation:
+
+§164.312(c)(1) — Integrity Controls
+
+§164.312(a)(1) — Access Control
+
+Issue:  
+Form allows HTTP fallback, exposing data in transit.
+
+Risk:  
+Man‑in‑the‑middle attacks.
+
+Finding 3 — Shared Scanning Workstation
+HIPAA Citation:
+
+§164.310(b) — Workstation Use
+
+§164.312(a)(1) — Unique User Identification
+
+Issue:  
+Multiple staff use the same login; no audit trail.
+
+Risk:  
+No accountability for ePHI handling.
+
+Finding 4 — Manual CRM Entry Without Audit Logs
+HIPAA Citation:
+
+§164.312(b) — Audit Controls
+
+Issue:  
+No record of who entered or modified client medical details.
+
+Risk:  
+Data integrity cannot be verified.
+
+6. Human Behavior Analysis (Psychology Lens)
+Cognitive Bias: “Administrative Convenience”
+Staff default to the easiest method (email) even when insecure.
+
+Normalization of Deviance
+Over time, risky shortcuts become “normal” because no incidents have occurred.
+
+Authority Gradient
+Paralegals hesitate to challenge attorneys about insecure practices.
+
+7. Recommendations
+Immediate Controls
+Enforce TLS on all web forms
+
+Enable email encryption for attachments
+
+Require unique logins on scanning workstation
+
+Governance Controls
+Create a HIPAA‑aligned Data Handling Policy
+
+Train staff on Business Associate obligations
+
+Implement quarterly audits of intake workflows
+
+Technical Controls
+Auto‑encrypt inbound attachments
+
+Move scanning workflow to a secure cloud folder
+
+Enable CRM audit logging
+
+8. Conclusion
+This report demonstrates your ability to:
+
+Map legal workflows to HIPAA safeguards
+
+Identify multi‑channel data ingress risks
+
+Apply administrative, technical, and physical controls
+
+Integrate human behavior analysis into compliance findings
+
+This is a strong portfolio artifact for healthcare, legal tech, and GRC roles.
