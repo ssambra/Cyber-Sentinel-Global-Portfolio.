@@ -1,0 +1,216 @@
+REPORT 3 — AI Scribe Patient Privacy Impact Assessment (PIA)
+Title: Privacy Impact Assessment for AI Clinical Scribe Deployment in Remote Primary Care Clinic
+Region: North America
+Industry: Healthcare (Telemedicine)
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+A remote primary care clinic piloted an AI clinical scribe to automate documentation during telehealth visits. During the pilot, the AI vendor temporarily stored audio transcripts in a U.S.-based cloud region despite the clinic’s Canadian patient base.
+
+This triggered concerns about:
+
+Data residency
+
+Unauthorized access
+
+AI hallucination risks
+
+Clinician over‑reliance on generated notes
+
+This Privacy Impact Assessment evaluates the privacy, security, and behavioral risks associated with the AI scribe and maps them to HIPAA Security Rule and NIST CSF 2.0 controls.
+
+2. Background
+The clinic uses telehealth exclusively and handles sensitive patient data, including:
+
+Mental health disclosures
+
+Medication history
+
+Diagnostic impressions
+
+Family medical history
+
+The AI scribe listens to patient encounters, generates structured notes, and syncs them to the EHR.
+
+A routine vendor review revealed that audio files were temporarily cached in a region outside the clinic’s approved data residency zone.
+
+Your role:
+
+Conduct a Privacy Impact Assessment
+
+Identify risks
+
+Map controls
+
+Recommend mitigations
+
+3. Scope
+This PIA covers:
+
+Data collection, processing, storage, and deletion
+
+Vendor data handling practices
+
+AI model behavior risks
+
+Human factors (clinician reliance, confirmation bias)
+
+HIPAA and NIST CSF 2.0 alignment
+
+4. Data Flow Overview
+Data Collected
+Audio of patient encounters
+
+Transcripts
+
+Summaries and structured notes
+
+Metadata (timestamps, clinician ID, encounter type)
+
+Processing Steps
+Audio captured during telehealth session
+
+Sent to AI vendor for transcription
+
+AI model generates SOAP note
+
+Clinician reviews and approves
+
+Final note stored in EHR
+
+Vendor deletes cached data (per policy)
+
+Identified Issue
+Vendor cached audio in a U.S. region for up to 72 hours, violating the clinic’s data residency requirement.
+
+5. Risk Assessment
+Risk 1 — Data Residency Non‑Compliance
+Description:  
+Audio files stored outside approved region.
+
+HIPAA Mapping:
+
+§164.308(a)(1) — Security Management Process
+
+§164.312(e)(1) — Transmission Security
+
+Impact:  
+Regulatory exposure, cross‑border data transfer risk.
+
+Likelihood: Medium
+Severity: High
+
+Risk 2 — Unauthorized Access to Cached Audio
+Description:  
+Temporary storage increases attack surface.
+
+HIPAA Mapping:
+
+§164.312(a)(1) — Access Control
+
+§164.312(b) — Audit Controls
+
+Impact:  
+Potential ePHI exposure.
+
+Likelihood: Medium
+Severity: High
+
+Risk 3 — AI Hallucination in Clinical Notes
+Description:  
+AI generated incorrect medication dosages in 3 of 50 pilot encounters.
+
+HIPAA Mapping:
+
+§164.308(a)(1)(ii)(B) — Risk Management
+
+§164.312(c)(1) — Integrity Controls
+
+Impact:  
+Patient safety risk, inaccurate medical record.
+
+Likelihood: Medium
+Severity: High
+
+Risk 4 — Clinician Over‑Reliance (Psychology Lens)
+Description:  
+Clinicians accepted AI‑generated notes without verifying accuracy.
+
+Behavioral Factors:
+
+Automation bias
+
+Cognitive offloading
+
+Time pressure
+
+Impact:  
+Incorrect diagnoses or treatment plans.
+
+Likelihood: High
+Severity: Medium
+
+6. Controls Evaluation
+Existing Controls
+Vendor BAA in place
+
+TLS enforced for all transmissions
+
+Clinician review required before note finalization
+
+Audit logs enabled in EHR
+
+Missing or Weak Controls
+No residency enforcement in vendor contract
+
+No automated deletion verification
+
+No hallucination detection workflow
+
+No training on AI cognitive bias
+
+7. Recommendations
+Governance Controls
+Update BAA to include explicit residency clauses
+
+Require vendor to provide data deletion certificates
+
+Implement quarterly vendor compliance audits
+
+Technical Controls
+Enforce region‑locked storage
+
+Enable anomaly detection for AI‑generated notes
+
+Require multi‑factor authentication for vendor dashboard
+
+Human Behavior Controls
+Train clinicians on automation bias
+
+Require mandatory double‑check for medications and diagnoses
+
+Add “AI Confidence Score” to notes to prompt review
+
+8. Residual Risk
+After implementing recommended controls:
+
+Data Residency Risk: Low
+
+Unauthorized Access Risk: Low
+
+Hallucination Risk: Medium (AI limitation)
+
+Over‑Reliance Risk: Medium (human factor)
+
+9. Conclusion
+This PIA demonstrates your ability to:
+
+Evaluate AI‑driven clinical tools
+
+Identify privacy and security risks
+
+Apply HIPAA and NIST CSF 2.0 controls
+
+Integrate human behavior analysis
+
+Produce audit‑ready documentation
