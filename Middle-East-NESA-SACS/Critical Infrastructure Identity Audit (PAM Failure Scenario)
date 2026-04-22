@@ -1,0 +1,221 @@
+REPORT 6 — Critical Infrastructure Identity Audit (PAM Failure Scenario)
+Title: Privileged Access Management Audit for Utility Control Center — Unauthorized OT Access Exposure
+Region: Middle East / Global Critical Infrastructure
+Industry: Utilities (Power Generation & Distribution)
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+A national utility operator experienced a PAM (Privileged Access Management) failure that allowed a junior engineer to retain elevated access to an OT control system for six months after a role change.
+
+During a routine identity audit, it was discovered that:
+
+The engineer’s privileged OT account was never revoked
+
+The PAM vault had no rotation policy for OT credentials
+
+Shared admin accounts were still in use for legacy systems
+
+No quarterly access reviews were performed
+
+This report evaluates the identity governance breakdown, maps findings to critical‑infrastructure security expectations, and provides remediation guidance.
+
+2. Background
+The utility operates:
+
+A main control center
+
+Multiple substations
+
+Remote pipeline monitoring stations
+
+The OT environment includes:
+
+SCADA systems
+
+PLCs
+
+HMIs
+
+Historian servers
+
+A junior engineer transferred from OT operations to a documentation role. However, their privileged OT account remained active, granting access to:
+
+SCADA configuration panels
+
+Alarm suppression settings
+
+Remote command interfaces
+
+Your role:
+
+Conduct a full identity audit
+
+Identify governance and technical failures
+
+Assess operational and national‑security risk
+
+Recommend corrective actions
+
+3. Scope
+This audit covers:
+
+Privileged Access Management (PAM)
+
+Identity Governance & Administration (IGA)
+
+Access review processes
+
+OT/IT separation of duties
+
+Logging and monitoring
+
+4. Incident Summary
+During a quarterly internal audit (the first in 18 months), the following was discovered:
+
+A former OT engineer retained Domain Admin–equivalent access to SCADA servers
+
+The PAM vault stored static passwords for OT systems
+
+Shared “OTAdmin” account used by 7 engineers
+
+No MFA enforced for remote OT access
+
+No logs available for privileged session recordings
+
+This is a critical identity governance failure with direct operational impact.
+
+5. Findings (Mapped to Critical Infrastructure Standards)
+Finding 1 — Privileged Account Not Removed After Role Change
+Requirement:  
+Critical infrastructure operators must enforce immediate access revocation upon role change.
+
+Issue:  
+Privileged OT account remained active for 6 months.
+
+Risk:  
+Unauthorized configuration changes, accidental or malicious.
+
+Severity: Critical
+Likelihood: High
+
+Finding 2 — Shared OT Admin Account
+Requirement:  
+Unique user IDs for all privileged access.
+
+Issue:  
+“OTAdmin” shared by 7 engineers.
+
+Risk:  
+No accountability; impossible to attribute actions.
+
+Severity: High
+Likelihood: High
+
+Finding 3 — No MFA for Remote OT Access
+Requirement:  
+MFA mandatory for all remote privileged access.
+
+Issue:  
+VPN + password only.
+
+Risk:  
+Credential theft → direct OT compromise.
+
+Severity: Critical
+Likelihood: Medium
+
+Finding 4 — Static Credentials in PAM Vault
+Requirement:  
+Privileged credentials must rotate automatically.
+
+Issue:  
+Passwords unchanged for 18+ months.
+
+Risk:  
+Credential reuse, insider threat, lateral movement.
+
+Severity: High
+Likelihood: High
+
+Finding 5 — No Privileged Session Recording
+Requirement:  
+All privileged OT sessions must be logged and monitored.
+
+Issue:  
+No session recording; logs retained for only 7 days.
+
+Risk:  
+No forensic capability.
+
+Severity: High
+Likelihood: Medium
+
+6. Human Behavior Analysis (Psychology Lens)
+Normalization of Deviance
+Shared accounts became “normal” because no incidents had occurred.
+
+Authority Gradient
+Junior engineers hesitated to report access they knew they shouldn’t have.
+
+Cognitive Offloading
+Engineers relied on shared accounts because remembering multiple credentials was “too much friction.”
+
+Overconfidence Bias
+Supervisors believed “our people would never misuse access.”
+
+7. Recommendations
+Governance Controls
+Implement formal role‑change workflow with automatic access revocation
+
+Establish quarterly access reviews for all OT systems
+
+Assign clear ownership for identity governance
+
+Technical Controls
+Enforce MFA for all remote OT access
+
+Eliminate shared accounts
+
+Implement automated credential rotation
+
+Enable privileged session recording
+
+Integrate PAM with SIEM for real‑time alerts
+
+Operational Controls
+Train engineers on identity hygiene
+
+Conduct annual OT security drills
+
+Implement separation of duties between IT and OT
+
+Cultural Considerations
+Your regional experience allows you to highlight:
+
+The importance of trust and accountability in Middle Eastern critical infrastructure
+
+The expectation of strict identity governance due to national‑security implications
+
+The cultural emphasis on clear hierarchy and responsibility
+
+8. Risk Rating Summary
+Risk Area	Severity	Likelihood	Overall Risk
+Privileged Access Retention	Critical	High	Critical
+Shared Accounts	High	High	Critical
+No MFA	Critical	Medium	High
+Static Credentials	High	High	High
+No Session Recording	High	Medium	High
+
+
+9. Conclusion
+This Identity Audit demonstrates your ability to:
+
+Evaluate privileged access in critical infrastructure
+
+Identify governance and technical failures
+
+Apply identity, OT, and behavioral analysis
+
+Produce audit‑ready, regulator‑aligned documentation
+
+This is a powerful artifact for roles in energy, utilities, OT security, and Middle East/APAC cybersecurity.
