@@ -1,0 +1,226 @@
+REPORT 8 — Australian APRA CPS 234 Vendor Readiness Assessment
+Title: Third‑Party Information Security Readiness Assessment for Cloud Analytics Vendor — APRA CPS 234 Compliance Review
+Region: Asia-Pacific (Australia)
+Industry: Financial Services (Banking)
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+An Australian mid‑tier bank engaged a cloud analytics vendor to support fraud‑detection modeling. During onboarding, the vendor failed to meet several APRA CPS 234 requirements, including:
+
+No evidence of control effectiveness testing
+
+Weak incident response capability
+
+Incomplete access control governance
+
+Insufficient security capability for a regulated environment
+
+No formal third‑party dependency management
+
+Breach notification timelines misaligned with APRA requirements
+
+This assessment evaluates the vendor’s readiness to support an APRA‑regulated entity and identifies gaps that must be remediated before onboarding.
+
+2. Background
+APRA CPS 234 requires regulated entities to maintain information security capability commensurate with threats, including:
+
+Governance
+
+Incident response
+
+Testing of controls
+
+Third‑party management
+
+Timely breach notification
+
+The vendor provides machine‑learning analytics used to detect anomalous transactions.
+Because the vendor processes sensitive financial data, CPS 234 applies directly.
+
+Your role:
+
+Conduct a CPS 234‑aligned readiness assessment
+
+Identify gaps
+
+Evaluate operational and regulatory risk
+
+Recommend remediation steps
+
+3. Scope
+This assessment covers:
+
+Information security governance
+
+Incident response capability
+
+Control testing
+
+Third‑party dependency management
+
+Breach notification
+
+Data protection and access control
+
+4. Assessment Methodology
+Reviewed vendor policies, SOC 2 report, and architecture diagrams
+
+Conducted interviews with CTO and security lead
+
+Evaluated cloud environment configuration
+
+Mapped findings to CPS 234 requirements
+
+Assessed risk severity and likelihood
+
+5. Findings (Mapped to APRA CPS 234 Requirements)
+Finding 1 — Insufficient Information Security Capability
+CPS 234 Requirement:  
+Regulated entities must ensure third parties maintain security capability commensurate with threats.
+
+Issue:  
+Vendor has no dedicated security team; security responsibilities distributed informally across engineering.
+
+Risk:  
+Slow response to threats; unclear accountability.
+
+Severity: High
+Likelihood: Medium
+
+Finding 2 — No Evidence of Control Effectiveness Testing
+CPS 234 Requirement:  
+Controls must be regularly tested for effectiveness.
+
+Issue:  
+Vendor has never conducted:
+
+Penetration testing
+
+Vulnerability scanning
+
+Incident simulation exercises
+
+Risk:  
+Unknown vulnerabilities; untested response capability.
+
+Severity: High
+Likelihood: High
+
+Finding 3 — Weak Third‑Party Dependency Management
+CPS 234 Requirement:  
+Entities must assess security capability of third‑party suppliers.
+
+Issue:  
+Vendor relies on multiple sub‑processors but has no formal vendor‑risk program.
+
+Risk:  
+Cascading supply‑chain vulnerabilities.
+
+Severity: Medium
+Likelihood: High
+
+Finding 4 — No Formal Incident Response Testing
+CPS 234 Requirement:  
+Entities must test incident response plans regularly.
+
+Issue:  
+Vendor has an IR plan but has never conducted a tabletop or simulation.
+
+Risk:  
+Unprepared for real‑world breach scenarios.
+
+Severity: High
+Likelihood: Medium
+
+Finding 5 — Breach Notification Not Timely
+CPS 234 Requirement:  
+Entities must notify APRA within 72 hours of material incidents.
+
+Issue:  
+Vendor’s policy states 7‑day notification window.
+
+Risk:  
+Regulatory non‑compliance for the bank.
+
+Severity: High
+Likelihood: Medium
+
+Finding 6 — Incomplete Access Control Governance
+CPS 234 Requirement:  
+Access must be restricted to authorized personnel only.
+
+Issue:
+
+No quarterly access reviews
+
+No MFA for privileged accounts
+
+No logging of administrative actions
+
+Risk:  
+Unauthorized access to financial data.
+
+Severity: High
+Likelihood: High
+
+6. Human Behavior Analysis (Psychology Lens)
+Start‑Up Bias
+Vendor leadership prioritizes speed and innovation over security maturity.
+
+Optimism Bias
+Assumption that “we’re too small to be targeted.”
+
+Informal Culture Drift
+Security responsibilities are “everyone’s job,” which means they are no one’s job.
+
+Cognitive Overload
+Engineers overwhelmed by dual responsibilities (development + security).
+
+7. Recommendations
+Governance
+Establish dedicated security function
+
+Implement formal vendor‑risk management
+
+Align breach notification timelines with CPS 234
+
+Technical
+Enforce MFA for all privileged accounts
+
+Implement quarterly access reviews
+
+Enable logging and monitoring for admin actions
+
+Conduct annual penetration testing
+
+Operational
+Conduct incident response tabletop exercises
+
+Document sub‑processor dependencies
+
+Implement continuous vulnerability scanning
+
+8. Risk Rating Summary
+Risk Area	Severity	Likelihood	Overall Risk
+Security Capability	High	Medium	High
+Control Testing	High	High	Critical
+Third‑Party Dependencies	Medium	High	High
+Incident Response	High	Medium	High
+Breach Notification	High	Medium	High
+Access Control	High	High	Critical
+
+
+9. Conclusion
+This APRA CPS 234 Vendor Readiness Assessment demonstrates your ability to:
+
+Evaluate third‑party risk in regulated financial environments
+
+Map findings to CPS 234 requirements
+
+Identify governance, technical, and operational gaps
+
+Integrate behavioral analysis into compliance findings
+
+Produce audit‑ready documentation for APRA‑regulated entities
+
+This is a powerful artifact for Australian banking, fintech, and risk‑management roles.
