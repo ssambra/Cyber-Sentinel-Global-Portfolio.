@@ -1,0 +1,228 @@
+REPORT 4 — Saudi Aramco SACS‑002 Third‑Party Risk Assessment (TPRA)
+Title: Third‑Party Risk Assessment of Cloud‑Based Maintenance Management Vendor — SACS‑002 Compliance Review
+Region: Middle East (Saudi Arabia)
+Industry: Energy / Critical Infrastructure
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+A Saudi energy operator engaged a cloud‑based maintenance management vendor to support refinery operations. During onboarding, the vendor failed to meet several Saudi Aramco Cybersecurity Standard (SACS‑002) requirements, including:
+
+Delayed incident notification capability
+
+Weak identity governance
+
+No evidence of data localization controls
+
+Insufficient logging and monitoring
+
+This Third‑Party Risk Assessment evaluates the vendor’s compliance posture, identifies gaps, and provides remediation guidance aligned with SACS‑002 and regional expectations for critical infrastructure.
+
+2. Background
+Saudi Aramco requires all third‑party vendors supporting operational technology (OT) or sensitive business functions to comply with SACS‑002, a cybersecurity standard covering:
+
+Governance
+
+Access control
+
+Network security
+
+Incident response
+
+Data protection
+
+Logging and monitoring
+
+The vendor provides a SaaS platform used by refinery engineers to track maintenance tasks, equipment failures, and safety inspections.
+
+Your role:
+
+Conduct a SACS‑002‑aligned TPRA
+
+Identify compliance gaps
+
+Assess operational risk
+
+Recommend corrective actions
+
+3. Scope
+This assessment covers:
+
+Vendor governance and cybersecurity maturity
+
+Identity and access management
+
+Data residency and protection
+
+Incident response readiness
+
+Logging and monitoring
+
+Contractual obligations under SACS‑002
+
+4. Assessment Methodology
+Reviewed vendor policies, SOC 2 report, and architecture diagrams
+
+Conducted interviews with vendor security lead
+
+Evaluated platform configuration in staging environment
+
+Mapped findings to SACS‑002 control domains
+
+Assessed risk severity and likelihood
+
+5. Key Findings (Mapped to SACS‑002)
+Finding 1 — Incident Notification Not Within 24 Hours
+SACS‑002 Requirement:  
+Vendors must notify Aramco of any security incident within 24 hours.
+
+Issue:  
+Vendor’s policy states 72‑hour notification window.
+
+Risk:  
+Delayed containment of OT‑related incidents.
+
+Severity: High
+Likelihood: Medium
+
+Finding 2 — Weak Identity Governance
+SACS‑002 Requirement:
+
+Unique user IDs
+
+MFA for all privileged accounts
+
+Quarterly access reviews
+
+Issue:
+
+MFA optional for standard users
+
+No documented access review process
+
+Shared admin account used by support team
+
+Risk:  
+Unauthorized access to refinery maintenance data.
+
+Severity: High
+Likelihood: High
+
+Finding 3 — No Data Residency Controls
+SACS‑002 Requirement:  
+Critical infrastructure data must be stored in approved regions.
+
+Issue:  
+Vendor stores data in EU and U.S. regions with no localization option.
+
+Risk:  
+Regulatory non‑compliance; geopolitical exposure.
+
+Severity: High
+Likelihood: Medium
+
+Finding 4 — Insufficient Logging & Monitoring
+SACS‑002 Requirement:  
+Vendors must maintain logs for at least 12 months and provide them upon request.
+
+Issue:
+
+Logs retained for only 30 days
+
+No export mechanism
+
+No SIEM integration
+
+Risk:  
+Inability to investigate incidents or support forensic analysis.
+
+Severity: Medium
+Likelihood: High
+
+Finding 5 — No Evidence of Secure SDLC
+SACS‑002 Requirement:  
+Vendors must follow a secure development lifecycle with code review and vulnerability scanning.
+
+Issue:  
+Vendor provided no documentation of:
+
+Static code analysis
+
+Dependency scanning
+
+Penetration testing
+
+Risk:  
+Unknown vulnerabilities in SaaS platform.
+
+Severity: Medium
+Likelihood: Medium
+
+6. Cultural & Regional Considerations (Your “Bridge” Value)
+Your experience working with Middle Eastern clients allows you to highlight:
+
+The importance of trust and transparency in vendor relationships
+
+The expectation of rapid communication during incidents
+
+The cultural emphasis on clear accountability and chain of command
+
+The need for data sovereignty due to geopolitical sensitivities
+
+This positions you as a compliance professional who understands both technical controls and regional business norms.
+
+7. Recommendations
+Governance
+Update incident response policy to 24‑hour notification
+
+Establish quarterly access review process
+
+Provide secure SDLC documentation
+
+Technical
+Enforce MFA for all users
+
+Eliminate shared admin accounts
+
+Implement 12‑month log retention
+
+Enable SIEM integration
+
+Data Protection
+Provide region‑locked storage
+
+Implement encryption key management aligned with SACS‑002
+
+Contractual
+Update SLA to include:
+
+Residency requirements
+
+Log retention
+
+Incident notification
+
+Audit rights
+
+8. Risk Rating Summary
+Risk Area	Severity	Likelihood	Overall Risk
+Incident Notification	High	Medium	High
+Identity Governance	High	High	Critical
+Data Residency	High	Medium	High
+Logging & Monitoring	Medium	High	High
+Secure SDLC	Medium	Medium	Medium
+
+
+9. Conclusion
+This TPRA demonstrates your ability to:
+
+Apply SACS‑002 requirements
+
+Evaluate third‑party vendors supporting critical infrastructure
+
+Identify governance, identity, and data sovereignty risks
+
+Provide culturally aligned recommendations
+
+Produce audit‑ready documentation
+
+This is a powerful artifact for roles in Saudi Arabia, UAE, Qatar, and GCC energy sectors.
