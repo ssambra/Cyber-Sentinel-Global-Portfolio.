@@ -1,0 +1,13 @@
+North America: The "AI-Ethics & Privacy" Deep Dive
+Scenario: A US-based genomic testing company (like 23andMe) wants to use AI to predict future health risks for insurance companies.
+The Innovation: You are auditing the Ethics of Predetermined Risk.
+
+Title: The Genomic Privacy Frontier: Auditing AI Predictive Modeling under HIPAA & CCPA
+
+Specialist: Melissa Rachel Wozney
+
+The Issue: The company’s AI model may inadvertently create "Digital Redlining" by identifying genetic predispositions that could lead to insurance discrimination.
+
+Technical Audit: Investigating "Model Poisoning" and "Data Leakage" where private genetic markers could be extracted from the AI’s public API.
+
+Psychology & Ethics: Using the Psychology of Privacy, I developed an "Ethics Impact Assessment" to ensure AI predictions don't violate the Genetic Information Nondiscrimination Act (GINA).
