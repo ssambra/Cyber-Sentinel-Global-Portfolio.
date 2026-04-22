@@ -1,0 +1,178 @@
+REPORT 1 — NIST CSF 2.0 → HIPAA Crosswalk Incident Scenario
+Title: Governance Breakdown in Access Review Process — NIST CSF 2.0 / HIPAA Security Rule Crosswalk Assessment
+Region: North America
+Industry: Healthcare (Remote-first clinic)
+Author: Ssambra — Identity Auditor & Threat Sentinel
+
+1. Executive Summary
+A remote-first healthcare clinic experienced repeated failures in its quarterly access review process, resulting in two terminated employees retaining access to ePHI systems for 47 and 63 days respectively.
+
+This report maps the incident to NIST CSF 2.0 (Govern Function) and HIPAA Security Rule requirements, demonstrating how governance failures cascade into operational risk.
+
+The purpose of this crosswalk is to show how a governance-level control (NIST GV) directly impacts HIPAA compliance, evidence collection, and patient privacy.
+
+2. Background
+The clinic uses a cloud-based EHR platform and relies on a distributed workforce. Access reviews are conducted manually by department managers using spreadsheets.
+
+During a routine internal audit, discrepancies were found between the HR termination list and the EHR active user list.
+
+Your role:
+
+Perform a Govern Function assessment
+
+Map each failure to HIPAA citations
+
+Identify missing evidence
+
+Recommend governance-level remediation
+
+3. Scope
+This assessment covers:
+
+NIST CSF 2.0 Govern (GV) categories
+
+HIPAA Security Rule Administrative & Technical Safeguards
+
+Evidence required for compliance
+
+Gaps in governance, documentation, and human behavior
+
+4. Incident Summary
+Two former employees retained access to the EHR system after termination:
+
+Employee A: 47 days
+
+Employee B: 63 days
+
+No confirmed data access occurred, but audit logs show multiple login attempts from Employee B’s home IP address.
+
+Root cause:
+
+HR → IT offboarding workflow not documented
+
+No centralized access review policy
+
+Managers “rubber-stamped” access reviews without validating user lists
+
+This is a governance failure, not a technical one.
+
+5. NIST CSF 2.0 → HIPAA Crosswalk Findings
+Finding 1 — GV.OC-01 (Organizational Context)
+NIST Requirement:  
+Legal, regulatory, and contractual obligations must be identified and understood.
+
+HIPAA Mapping:
+
+§164.308(a)(1) — Security Management Process
+
+§164.308(a)(3) — Workforce Security
+
+Gap:  
+No documented workflow defining who is responsible for disabling access upon termination.
+
+Evidence Missing:
+
+Termination checklist
+
+Access revocation logs
+
+Policy register
+
+Finding 2 — GV.RR-01 (Roles & Responsibilities)
+NIST Requirement:  
+Cybersecurity roles and responsibilities must be assigned and communicated.
+
+HIPAA Mapping:
+
+§164.308(a)(2) — Assigned Security Responsibility
+
+Gap:  
+Managers believed HR handled access removal; HR believed IT handled it.
+
+Human Behavior Note (Psychology):  
+This is a classic diffusion of responsibility failure.
+
+Finding 3 — GV.PO-01 (Policy Establishment)
+NIST Requirement:  
+Cybersecurity policies must be established and communicated.
+
+HIPAA Mapping:
+
+§164.308(a)(1)(i) — Policies and Procedures
+
+Gap:  
+No formal Access Review Policy existed.
+Reviews were performed inconsistently and without validation.
+
+Evidence Missing:
+
+Policy document
+
+Version history
+
+Training records
+
+Finding 4 — GV.MT-01 (Monitoring & Oversight)
+NIST Requirement:  
+Governance processes must be monitored for effectiveness.
+
+HIPAA Mapping:
+
+§164.308(a)(8) — Evaluation
+
+§164.312(b) — Audit Controls
+
+Gap:  
+No oversight mechanism to ensure access reviews were accurate.
+
+Evidence Missing:
+
+Audit logs
+
+Review sign-off
+
+Exception reports
+
+6. Risk Rating
+Risk Level: High
+Reason:
+
+Extended unauthorized access window
+
+Potential for ePHI exposure
+
+Lack of governance controls
+
+No compensating monitoring
+
+7. Recommendations
+Governance-Level Fixes
+Establish a formal Access Review Policy aligned with NIST GV and HIPAA.
+
+Assign explicit ownership: HR (initiation), IT (execution), Compliance (verification).
+
+Implement quarterly audits with random sampling.
+
+Technical Fixes
+Automate offboarding via IAM integration with HRIS.
+
+Enable real-time alerts for login attempts from terminated accounts.
+
+Human Behavior Fixes
+Train managers on confirmation bias and rubber-stamping risk.
+
+Require evidence-based validation (screenshots, logs).
+
+8. Conclusion
+This incident demonstrates how governance failures directly impact HIPAA compliance.
+By mapping NIST CSF 2.0 Govern controls to HIPAA Security Rule requirements, the clinic can establish a defensible, evidence-driven governance model that prevents recurrence.
+
+This report serves as a portfolio artifact demonstrating my ability to:
+
+Perform cross-framework mapping
+
+Identify governance failures
+
+Apply legal and psychological insight
+
+Produce audit-ready documentation
